@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blackpoint Security | Global Offensive Security</title>
+  <meta
+    name="description"
+    content="Premium Cybersecurity Landingpage mit detaillierter Canvas-Welt, Infrastruktur-Hubs, globalen Datenrouten und High-End-Visualisierung fuer Pentesting und Red Teaming."
+  >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <canvas id="bgMatrix" class="bg-matrix" aria-hidden="true"></canvas>
+  <div class="ambient ambient-a" aria-hidden="true"></div>
+  <div class="ambient ambient-b" aria-hidden="true"></div>
+  <div class="ambient-grid" aria-hidden="true"></div>
+  <div class="ambient-noise" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#top">
+      <span class="brand-mark"></span>
+      <span class="brand-copy">
+        <strong>Blackpoint</strong>
+        <span>Offensive Security</span>
+      </span>
+    </a>
+
+    <nav class="nav">
+      <a href="#services">Services</a>
+      <a href="#system">System</a>
+      <a href="#process">Process</a>
+      <a href="#contact" class="nav-cta">Assessment anfragen</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy" data-reveal>
+        <p class="eyebrow">Global Pentesting · Red Teaming · Infrastructure Mapping</p>
+        <h1>Globale Angriffsfläche. Sichtbar bis auf Infrastruktur-Ebene.</h1>
+        <p class="hero-text">
+          Diese Version macht die Welt deutlich detaillierter: Hubs, Regionen, Datenrouten und
+          Infrastruktur-Impulse über Kontinente hinweg. Statt nur einer hübschen Kugel wirkt der
+          Hero jetzt wie ein globales Security-Operations-Interface.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#contact" class="button button-primary">Premium Assessment anfragen</a>
+          <a href="#services" class="button button-secondary">Leistungsumfang ansehen</a>
+        </div>
+
+        <div class="hero-panels">
+          <article>
+            <strong>Infrastructure Routes</strong>
+            <span>Datenpfade zwischen Regionen, Knotenpunkten und kritischen Zielzonen werden sichtbar.</span>
+          </article>
+          <article>
+            <strong>Continental Flow</strong>
+            <span>Die Welt zeigt Signalbewegungen über Europa, Nordamerika, Asien und weitere Cluster.</span>
+          </article>
+          <article>
+            <strong>Enterprise Signal</strong>
+            <span>Visuell extrem, aber klar genug für Firmen, Security-Teams und C-Level.</span>
+          </article>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <div class="quantum-stage">
+          <canvas id="globeCanvas" class="globe-canvas"></canvas>
+
+          <div class="stage-fog"></div>
+          <div class="stage-floor"></div>
+          <div class="scan-beam scan-beam-a"></div>
+          <div class="scan-beam scan-beam-b"></div>
+          <div class="center-scan"></div>
+
+          <div class="poly cube cube-a">
+            <span class="face front"></span>
+            <span class="face back"></span>
+            <span class="face left"></span>
+            <span class="face right"></span>
+            <span class="face top"></span>
+            <span class="face bottom"></span>
+          </div>
+
+          <div class="poly cube cube-b">
+            <span class="face front"></span>
+            <span class="face back"></span>
+            <span class="face left"></span>
+            <span class="face right"></span>
+            <span class="face top"></span>
+            <span class="face bottom"></span>
+          </div>
+
+          <div class="poly prism prism-a">
+            <span class="pane p1"></span>
+            <span class="pane p2"></span>
+            <span class="pane p3"></span>
+          </div>
+
+          <div class="orbital orbital-a"></div>
+          <div class="orbital orbital-b"></div>
+          <div class="orbital orbital-c"></div>
+
+          <div class="glass-panel glass-panel-main">
+            <span class="kicker">GLOBAL INFRASTRUCTURE MAP</span>
+            <strong>Ein echter Signalraum statt nur eine Deko-Kugel</strong>
+            <p>Kontinentale Cluster, Infrastruktur-Hubs, Datenpfade und aktive Inbound-/Outbound-Routen wirken wie ein lebendiges Security-Netz.</p>
+          </div>
+
+          <div class="glass-panel glass-panel-side">
+            <span class="kicker">HUB ACTIVITY</span>
+            <strong>Plätze, Regionen und Netzwerke werden als operative Knoten lesbar</strong>
+            <p>Mehr Details, mehr Verbindungen und mehr Tiefenwirkung sorgen für deutlich stärkere Glaubwürdigkeit.</p>
+          </div>
+
+          <div class="glass-panel glass-panel-bottom">
+            <span class="kicker">OFFENSIVE PREMIUM</span>
+            <strong>Gebaut für Firmen, die keine Standard-Security-Seite wollen</strong>
+            <p>Technisch, filmisch, global und bewusst stärker als die meisten Seiten im Markt.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section trust-band" data-reveal>
+      <p>Ideal für Firmen mit APIs, Webplattformen, Cloud-Umgebungen, internen Netzwerken und internationaler Infrastruktur.</p>
+      <div class="trust-items">
+        <span>Web Apps</span>
+        <span>Identity</span>
+        <span>Cloud</span>
+        <span>Infrastructure</span>
+        <span>API</span>
+        <span>Red Team</span>
+      </div>
+    </section>
+
+    <section class="section services" id="services">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow">Services</p>
+        <h2>Offensive Security für moderne Angriffsflächen</h2>
+        <p>
+          Vom fokussierten Web Application Pentest bis zum globalen Red-Team-Szenario für hybride
+          Infrastrukturen: Diese Positionierung zielt auf Unternehmen, die Wirkung, Tiefe und Vertrauen gleichzeitig suchen.
+        </p>
+      </div>
+
+      <div class="service-grid">
+        <article class="service-card" data-reveal>
+          <span>01</span>
+          <h3>Web Application Pentest</h3>
+          <p>Business Logic, Auth, APIs, Rollen, Session-Flows, Datenpfade und moderne App-Architekturen.</p>
+        </article>
+        <article class="service-card" data-reveal>
+          <span>02</span>
+          <h3>External Infrastructure</h3>
+          <p>Perimeter, VPN, DNS, Mail, Zertifikate, exposed Services und Fehlkonfigurationen im realen Kontext.</p>
+        </article>
+        <article class="service-card" data-reveal>
+          <span>03</span>
+          <h3>Identity & Internal</h3>
+          <p>AD, Trust Abuse, Privilege Escalation, Lateral Movement und interne Angriffspfade über reale Ketten.</p>
+        </article>
+        <article class="service-card" data-reveal>
+          <span>04</span>
+          <h3>Cloud & Red Teaming</h3>
+          <p>AWS, Azure, IAM, Secrets, CI/CD, Storage und mehrstufige Simulation echter Angriffe.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section system" id="system">
+      <div class="system-panel" data-reveal>
+        <div>
+          <p class="eyebrow">System</p>
+          <h2>Die Welt zeigt jetzt sichtbar, wo Infrastruktur rein- und rausläuft.</h2>
+        </div>
+        <p>
+          Hubs senden Impulse, internationale Pfade leuchten über Kontinente hinweg und die Globe liest sich
+          eher wie ein globales Operations-Interface als wie eine Hero-Animation. Genau das hebt die Seite auf ein anderes Niveau.
+        </p>
+      </div>
+
+      <div class="feature-grid">
+        <article class="feature-card" data-reveal>
+          <span>Regions</span>
+          <h3>Kontinentale Zonen</h3>
+          <p>Nordamerika, Europa, Asien, Südamerika, Afrika und Ozeanien wirken als separate Aktivitätsfelder.</p>
+        </article>
+        <article class="feature-card" data-reveal>
+          <span>Routes</span>
+          <h3>Inbound / Outbound</h3>
+          <p>Verbindungen laufen zwischen Hubs und zeigen echte Bewegungsrichtung durch animierte Impulse.</p>
+        </article>
+        <article class="feature-card" data-reveal>
+          <span>Scene</span>
+          <h3>Mehr operative Tiefe</h3>
+          <p>Die Kombination aus Canvas, Orbiten, 3D-Körpern und Signalachsen wirkt wie ein taktisches System.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section process" id="process">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow">Process</p>
+        <h2>Vom Scope bis zum Retest aggressiv, klar und belastbar</h2>
+      </div>
+
+      <div class="timeline">
+        <article data-reveal>
+          <strong>01. Scoping</strong>
+          <p>Ziele, Systeme, Testfenster und Rules of Engagement werden professionell eingegrenzt.</p>
+        </article>
+        <article data-reveal>
+          <strong>02. Attack Modeling</strong>
+          <p>Risiken werden als zusammenhängende Pfade modelliert statt nur als einzelne Findings gelistet.</p>
+        </article>
+        <article data-reveal>
+          <strong>03. Manual Offensive Testing</strong>
+          <p>Technisch tiefe Prüfung mit Fokus auf Wirkung, Ausnutzbarkeit und reale Geschäftsrelevanz.</p>
+        </article>
+        <article data-reveal>
+          <strong>04. Reporting & Retest</strong>
+          <p>Executive Summary, technische Reproduktion, Priorisierung und Nachprüfung in einem Workflow.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="contact-copy" data-reveal>
+        <p class="eyebrow">Kontakt</p>
+        <h2>Fragen Sie einen Premium Pentest für Ihr Unternehmen an.</h2>
+        <p>
+          Die Seite bleibt statisch für GitHub Pages. Das Formular kann an Formspree, Getform
+          oder einen eigenen Endpoint angeschlossen werden.
+        </p>
+        <div class="contact-tags">
+          <span>NDA-ready</span>
+          <span>GitHub Pages</span>
+          <span>Fast response</span>
+        </div>
+      </div>
+
+      <form class="contact-form" id="contactForm" data-reveal>
+        <label>
+          Unternehmen
+          <input type="text" name="company" placeholder="Beispiel GmbH" required>
+        </label>
+        <label>
+          Ansprechpartner
+          <input type="text" name="name" placeholder="Max Mustermann" required>
+        </label>
+        <label>
+          E-Mail
+          <input type="email" name="email" placeholder="security@firma.de" required>
+        </label>
+        <label>
+          Service
+          <select name="service" required>
+            <option value="">Bitte auswählen</option>
+            <option>Web Application Pentest</option>
+            <option>External Infrastructure Assessment</option>
+            <option>Identity / Internal Review</option>
+            <option>Cloud Security Assessment</option>
+            <option>Red Team Exercise</option>
+          </select>
+        </label>
+        <label class="full-width">
+          Projektbeschreibung
+          <textarea name="message" rows="5" placeholder="Welche Systeme oder Ziele sollen geprüft werden?" required></textarea>
+        </label>
+        <div class="form-footer">
+          <button class="button button-primary" type="submit">Assessment senden</button>
+          <p id="formStatus" role="status" aria-live="polite">
+            Formularziel in site.config.js hinterlegen oder Mail-Fallback nutzen.
+          </p>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Blackpoint Offensive Security · Global Cybersecurity für Unternehmen · Infrastruktur sichtbar gemacht.</p>
+  </footer>
+
+  <script src="site.config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
